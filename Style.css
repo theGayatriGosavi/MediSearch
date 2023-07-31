@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:wght@300;408;500;600;788&display-swap); 
 
 *{
     padding: 0;
@@ -17,34 +17,55 @@ body, ul {
     margin: 0;
     padding: 0;
   }
+.logo
+{
+  font-size: 50px;
+  color: aliceblue;
+}
+.navbar
+{
+    background-color: #8617b9; 
+    height: 75px; 
+}
 
-  .navbar {
-    background-color: #9825cd; 
-    height: 50px; 
-  }
-
-  .navbar li {
+.navbar li
+{
     display: inline-block;
     padding: 15px 20px;
-  }
+}
 
-  .navbar li a {
-    color: rgb(232, 2, 2);
-    text-decoration: none;
-  }
-
-  .navbar li a:hover {
-    color: #ff9900; 
-  }
-  .logo
-  {
+.logo
+{
     padding: auto;
-  }
+}
   
 .search-container
 {
-  padding: 0 900px;
+  padding: 0 770px;
   padding-right: 10px;
   padding-bottom: 0;
   border-radius: 50%;
+}
+.navbar2 
+{
+  background-color: #d0d0d0; 
+  height: 50px; 
+}
+.navbar2 ul {
+  display: inline-block;
+  padding-top: 13px;
+  padding-left: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+
+}
+.btn
+{
+    color: bisque;
+}
+.navbar2 button:last-child
+{
+  
 }
