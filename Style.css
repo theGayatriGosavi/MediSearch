@@ -24,14 +24,19 @@ body, ul {
 }
 .navbar
 {
-    background-color: #8617b9; 
+    background-color: #9155A7; 
     height: 75px; 
+    position: fixed;
+    overflow: hidden;
+    top: 0; 
+    width: 100%; 
 }
 
 .navbar li
 {
     display: inline-block;
     padding: 15px 20px;
+    position: fixed;
 }
 
 .logo
@@ -39,39 +44,99 @@ body, ul {
     padding: auto;
 }
 
-.search-container
+.search-container 
 {
-  padding: 0 690px;
+  padding: 0 1000px;
   padding-right: 10px;
   padding-bottom: 0;
   border-radius: 50%;
+  float: right;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+.searchbar 
+{
+  display: flex;
+}
+.search-box div input
+{
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+}
+.fa fa-search
+{
+  color: white;
+  display: flex;
 }
 .navbar2 
 {
-  background-color: #ebebeb; 
+  background-color: #F2F2F2; 
   height: 50px; 
+  top: 75px; 
+  width: 100%; 
+  position: fixed;
+  border-bottom: 5px solid rgb(255, 255, 255);
+  
 }
 .navbar2 ul {
   display: inline-block;
-  padding-top: 13px;
+  padding-top: 10px;
   padding-left: 20px;
   background-color: transparent;
   border: none;
   outline: none;
   width: 100%;
+  overflow: hidden;
+  position: fixed;
+  border-bottom: 3px solid transparent;
 
 }
-.search-box
+.btn 
 {
-  color: white;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    transition-duration: 0.4s;
 }
-.navbar2 .btn
+.btn :hover
 {
-    color: bisque;
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
+  background-size: 25px 25px; 
+  border-bottom: 3px solid #9155A7;
 }
+
 .navbar2 button:last-child
 {
-  
+  float: right;
+  padding-right: 20px;
+}
+.wrapper {
+  overflow: hidden;
+}
+.sliding-background {
+  height: 960px;
+  width: 6000px;
+}
+.sliding-background {
+  background: url("https://5.imimg.com/data5/FF/BS/GLADMIN-4642077/neurology-treatment-services-500x500.png") repeat-x;
+  height: 500px;
+  width: 5076px;
+}
+@keyframes slide {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
 }
 .bgimg
 {
