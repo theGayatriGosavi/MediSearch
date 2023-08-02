@@ -13,17 +13,17 @@
           <ul>
                 <li class="logo">MediSearch <i class="fa fa-stethoscope" style="font-size:48px;color:rgb(255, 255, 255)"></i></li>
                 
-                <li>
-                    <div class="search-container">
-                        <div id="search-box">
-                            <div class="searchbar">
-                                <i class="fa fa-search"></i>
-                                <input type="text" placeholder="Search">
-                            </div>
-                        </div>
-                        </div>
-                        </div>
+                <li class="search-container">
+                    <div class="box">
+                        <form name="search">
+                            <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                        </form>
+                        <i class="fa fa-search"></i>
+                    
                     </div>
+                    <a href="https://www.youtube.com/c/ShortCode" target="_blank" id="ytb">
+                    <i class="fab fa-youtube"> </i>
+                    </a>
                 </li>
           </ul>
         </nav>
@@ -40,9 +40,14 @@
                 <button id="lgsu" class="btn">Login/SignUp</button>
             </ul>
         </nav>
-        <div class="bgimg">
-            <img src="BG.webp" alt="" height="792px">
+        <div class="wrapper">
+          <div class="sliding-background">
+             <div class="bgimg">
+               <img src="BG.webp" alt="" height="792px">
+             </div>
+          </div>
         </div>
+        
         
     </div>
 </body>
