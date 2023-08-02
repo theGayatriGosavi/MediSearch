@@ -29,11 +29,16 @@ body, ul {
 .logo
 {
   font-size: 50px;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
+  text-shadow: #19161c;
+  text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
 }
 .navbar
 {
-    background-color: #9155A7; 
+    background-color: #c6ebffd8; /*9155a7*/
     height: 75px; 
     position: fixed;
     overflow: hidden;
@@ -66,21 +71,22 @@ body, ul {
   width: 50px;
   height: 50px;
   background: none;
-  border: 4px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   box-sizing: border-box;
   font-family: Comic Sans MS;
   font-size: 26px;
-  color: #ffffff;
+  color: #100404;
   outline: none;
   transition: .5s;
 }
+
 .box:hover input{
   width: 350px;
-  background: #ffffff88;
+  background: #ffffff;
   border-radius: 10px;
 }
-.box i{
+.box i{  /*search icon*/
   position: absolute;
   top: 50%;
   right: 1px;
@@ -94,30 +100,12 @@ body, ul {
   z-index: -1;
 }
 
-/* YouTube icon */
-#ytb {
-height: 50px;
-width: 50px;
-text-align: center;
-line-height: 52px;
-border: 2px solid transparent;
-color: #ff1717;
-font-size: 25px;
-transition: 0.3s;
-}
-
-#ytb:hover{
-border-radius: 50%;
-border-color: #ff1717;
-box-shadow: 0 0 10px #ff4040;
-}
-
-
+/*NAVBAR 2*/
 
 .navbar2 
 {
-  background-color: #F2F2F2; 
-  height: 50px; 
+  background-color: #f2f2f2ad; 
+  height: 55px; 
   top: 75px; 
   width: 100%; 
   position: fixed;
@@ -126,7 +114,7 @@ box-shadow: 0 0 10px #ff4040;
 }
 .navbar2 ul {
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 7px;
   padding-left: 20px;
   background-color: transparent;
   border: none;
@@ -152,10 +140,10 @@ box-shadow: 0 0 10px #ff4040;
 }
 .btn :hover
 {
-  background-color: #ffffff; 
+  background-color: #ffffffad; 
   color: rgb(0, 0, 0);
-  background-size: 25px 25px; 
-  border-bottom: 3px solid #9155A7;
+  background-size: 30px 30px; 
+  
 }
 
 .navbar2 button:last-child
@@ -168,6 +156,3 @@ box-shadow: 0 0 10px #ff4040;
 {
   height: auto;
 }
-
-
-
