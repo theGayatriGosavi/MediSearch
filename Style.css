@@ -10,8 +10,8 @@ body{
     height: 100%;
     margin: 0; 
     padding: 0;
-    background: #19161c;
-    height: 100vh;
+    background: #ffffff;
+    height: 1000px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -29,16 +29,22 @@ body, ul {
 .logo
 {
   font-size: 50px;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
+  text-shadow: #19161c;
+  text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
 }
 .navbar
 {
-    background-color: #9155A7; 
+    background-color: #9155a7; /*9155a7*/
     height: 75px; 
-    position: fixed;
+    position: absolute;
     overflow: hidden;
     top: 0; 
     width: 100%; 
+    po
 }
 
 .navbar li
@@ -66,21 +72,22 @@ body, ul {
   width: 50px;
   height: 50px;
   background: none;
-  border: 4px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   box-sizing: border-box;
   font-family: Comic Sans MS;
   font-size: 26px;
-  color: #ffffff;
+  color: #100404;
   outline: none;
   transition: .5s;
 }
+
 .box:hover input{
   width: 350px;
-  background: #ffffff88;
+  background: #ffffff;
   border-radius: 10px;
 }
-.box i{
+.box i{  /*search icon*/
   position: absolute;
   top: 50%;
   right: 1px;
@@ -94,46 +101,26 @@ body, ul {
   z-index: -1;
 }
 
-/* YouTube icon */
-#ytb {
-height: 50px;
-width: 50px;
-text-align: center;
-line-height: 52px;
-border: 2px solid transparent;
-color: #ff1717;
-font-size: 25px;
-transition: 0.3s;
-}
-
-#ytb:hover{
-border-radius: 50%;
-border-color: #ff1717;
-box-shadow: 0 0 10px #ff4040;
-}
-
-
+/*NAVBAR 2*/
 
 .navbar2 
 {
-  background-color: #F2F2F2; 
-  height: 50px; 
+  background-color: #f2f2f2; 
+  height: 55px; 
   top: 75px; 
   width: 100%; 
-  position: fixed;
+  position: absolute;
   border-bottom: 5px solid rgb(255, 255, 255);
-  
 }
 .navbar2 ul {
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 7px;
   padding-left: 20px;
   background-color: transparent;
   border: none;
   outline: none;
   width: 100%;
   overflow: hidden;
-  position: fixed;
   border-bottom: 3px solid transparent;
 
 }
@@ -152,10 +139,10 @@ box-shadow: 0 0 10px #ff4040;
 }
 .btn :hover
 {
-  background-color: #ffffff; 
+  background-color: #ffffffad; 
   color: rgb(0, 0, 0);
-  background-size: 25px 25px; 
-  border-bottom: 3px solid #9155A7;
+  background-size: 30px 30px; 
+  
 }
 
 .navbar2 button:last-child
@@ -167,7 +154,233 @@ box-shadow: 0 0 10px #ff4040;
 .bgimg
 {
   height: auto;
+  top: none;
+  position: initial;
+  overflow: hidden;
+}
+.navbar3
+{
+  background-color: #9155a7; 
+  height: 110px; 
+  top: 72px; 
+  width: 100%; 
+  position: relative;
+  border-top: 5px solid rgb(255, 255, 255);
+  box-shadow: 10px 10px 5px 12px #e6e6e6;
+}
+.navbar3 ul {
+  display: flex;
+  padding-top: 12px;
+  padding-left: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  position: absolute;
+  border-bottom: 3px solid transparent;
+}
+.navbar3 h2
+{
+  color: white;
+  font-size: 36px;
+  padding-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: 55px;
 }
 
+.book_btn
+{ width: 260px;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  background-color: #6d3f7d;
+  border: none;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 24px;
+  padding-bottom: 15px;
+  float: right;
+  margin-left: 269px;
+  margin-top: 10px;
+  margin-right: auto;
+  overflow: hidden;
+  transition-duration: 0.4s;
+}
+.book_btn :hover
+{
+  background-color: #0DB26B; 
+  color: rgb(0, 0, 0);
+  
+}
+.docs
+{
+  display: block;
+  color: #F2F2F2;
+  height: 300px; 
+  top: 100px; 
+  width: 100%; 
+  position: relative;
+}
+.docs h2
+{
+  text-align: center;
+  color: #0DB26B;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 50;
+}
+.medicons
+{
+  position:absolute;
+  display: inline-flex;
+}
+.medicons li
+{
+  position: relative;
+  display: inline-block;
+  margin: 50px;
+  border: #ffffff;
+  border: #000;
+  outline: #000;
+  margin: 61px 140px 134px 173px;
+}
+.medicons .fa-calendar
+{
+  color: #ffffff;
+  position: absolute;
+  margin-left: 32px;
+  margin-top: 28px;
+}
+.calender
+{
+  background-color: #0DB26B;
+  height: 100px;
+  width: 100px;
+  border: 5px solid 0DB26B;
+  border-radius: 100%;
+}
+.calender h3
+{
+  color: #0DB26B;
+  position: absolute;
+  margin-top: 132px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-left: -47px ;
+  font-size: 32px;
+  font-weight: lighter;
+}
+.calender p{
+    color: #8b8888;
+    position: absolute;
+    margin-top: 222px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: -114px;
+    font-size: 18px;
+    font-weight: lighter;
+    width: 335px;
+}
 
-
+.medicons .fa-hospital-o
+{
+  color: #ffffff;
+  position: absolute;
+  margin-left: 35px;
+  margin-top: 29px;
+}
+.hospital
+{
+  background-color: #0DB26B;
+  height: 100px;
+  width: 100px;
+  border: 5px solid 0DB26B;
+  border-radius: 100%;
+}
+.hospital h3
+{
+  color: #0DB26B;
+  position: absolute;
+  margin-top: 132px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-left: -45px;
+  width: 200px;
+  font-size: 32px;
+  font-weight: lighter;
+}
+.hospital p{
+  color: #8b8888;
+  position: absolute;
+  margin-top: 222px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-left: -114px;
+  font-size: 18px;
+  font-weight: lighter;
+  width: 335px;
+}
+.medicons .fa-user-md
+{
+  color: #ffffff;
+  position: absolute;
+  margin-left: 36px;
+  margin-top: 28px;
+}
+.usermd
+{
+  background-color: #0DB26B;
+  height: 100px;
+  width: 100px;
+  border: 5px solid 0DB26B;
+  border-radius: 100%;
+}
+.usermd h3
+{
+  color: #0DB26B;
+  position: absolute;
+  margin-top: 132px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-left: -47px ;
+  width: 200px;
+  font-size: 32px;
+  font-weight: lighter;
+}
+.usermd p{
+  color: #8b8888;
+  position: absolute;
+  margin-top: 222px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-left: -114px;
+  font-size: 18px;
+  font-weight: lighter;
+  width: 335px;
+}
+.footer
+{
+  background-color: #6DCCA3; 
+  height: 110px; 
+  top: 280px; 
+  width: 100%; 
+  position: relative;
+  border-top: 5px solid rgb(255, 255, 255);
+}
+.footer ul
+{
+  color: white;
+  font-size: 10px;
+  padding-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: 55px;
+}
+.footer li
+{
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+}
