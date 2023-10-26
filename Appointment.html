@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Medical Appointment Booking</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f5f7;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.appointment-list {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const appointmentForm = document.getElementById('appointment-form');
+    const appointmentList = document.getElementById('appointment-list');
+
+    appointmentForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const patientName = document.getElementById('patient-name').value;
+        const doctor = document.getElementById('doctor').value;
+        const date = document.getElementById('date').value;
+        const time = document.getElementById('time').value;
+
+        const appointmentItem = document.createElement('li');
+        appointmentItem.innerHTML = `
+            <strong>Patient:</strong> ${patientName}<br>
+            <strong>Doctor:</strong> ${doctor}<br>
+            <strong>Date:</strong> ${date}<br>
+            <strong>Time:</strong> ${time}
+        `;
+
+        appointmentList.appendChild(appointmentItem);
+
+        // You can add code here to send this appointment data to a server for processing.
+        // In a real system, you would also handle conflicts, validation, and more.
+    });
+});
+
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Medical Appointment Booking System</h1>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <form id="appointment-form">
+                <h2>Book an Appointment</h2>
+                <label for="patient-name">Patient Name</label>
+                <input type="text" id="patient-name" required>
+                <label for="doctor">Select a Doctor</label>
+                <select id="doctor" required>
+                    <option value="Dr. Smith">Dr. Smith</option>
+                    <option value="Dr. Johnson">Dr. Johnson</option>
+                    <option value="Dr. Davis">Dr. Davis</option>
+                </select>
+                <label for="date">Select a Date</label>
+                <input type="date" id="date" required>
+                <label for="time">Select a Time</label>
+                <input type="time" id="time" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="appointment-list">
+        <h2>Your Appointments</h2>
+        <ul id="appointment-list">
+            <!-- Appointments will be displayed here -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

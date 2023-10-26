@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediSearch</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,45 +11,94 @@
 <body>
     <div class="container">
         <nav class="navbar">
-          <ul>
-                <li class="logo"><b>MediSearch</b> <i class="fa fa-stethoscope" style="font-size:48px;color:rgb(255, 255, 255)"></i></li>
-                
-                <li class="search-container">
+          
+            <ul class="widgets">
+              <li class="region-widget d-none d-lg-inline-flex"><i class="ion-earth"></i> Indian Subcontinent</li>
+              <li class="email-widget d-none d-lg-inline-flex"><i class="ion-mail-outline"></i> @MediSearch.com</li>
+              <li class="emergency-widget">
+                  <h4 class="emergency">            <!-- Emergency Number -->
+                      <span class="sub-text">Emergency</span>
+                      <span class="number">123-909-909</span><br/>
+                  </h4>
+              </li>
+          </ul>
+                <!-- <li class="search-container">
                     <div class="box">
                         <form name="search">
                             <input type="text" class="input" placeholder="    Search" name="txt" onmouseout="this.value = ''; this.blur();">
                         </form>
                         <i class="fa fa-search"></i>
                     </div>
-                </li>
-          </ul>
-        </nav>
-        <br>
-        <br>
-        <br>
-        <br>
+                </li>-->
+          
+        </nav> 
+      
         <nav class="navbar2">
-            <ul class="btn">
-                <button id="home" class="btn">Home</button>
-                <button id="doc" class="btn">Find Doctor</button>
-                <button id="services" class="btn">Services</button>
-                <button id="consultancy" class="btn">Consultancy</button>
-                <button id="lgsu" class="btn">Login/SignUp</button>
+          <ul class="list">
+              <button class="logo"><b>MediSearch</b> <i class="fa fa-stethoscope" style="font-size:48px;color:#394657"></i></button>
+              <div class="nav_opt">
+                <li href="" id="home" class="btn"><a href="">Home</a></li>
+                <li href="" id="doc" class="btn"><a href="">Find Doctor</a></li>
+                
+                  <div class="list-choice" style="width: 155px;">
+                    <div class="list-choice-title"><a href="">Services</a></div>
+                    <div class="list-choice-objects" style="height: 430px;">
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Genral health</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Home visits</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Emergency</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>vaccination</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Blood Test</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Physical Exam</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Mental health</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Prevention and wellness</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Therapy</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Dialysis Clinics</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Health Insurence</span>
+                      </label>
+                    </div>
+                  </div>
+              
+
+                
+                <li href="" id="consultancy" class="btn"><a href="">Consultancy</a></li>
+                <li id="lgsu" class="btn"><a href="login.html">Login/SignUp</a></li>
+              </div>
             </ul>
         </nav>
         
-            <div class="wrapper">
+    
           <div class="sliding-background">
              <div class="bgimg">
                <img src="BG.webp" alt="" height="792px">
              </div>
           </div>
-        </div>  
+       
         
         <nav class="navbar3">
             <ul style="list-style-type:none;">
                <li> <h2>> Schedule your appointment online</h2> </li>
-               <li><button class="book_btn">Book an appointment</button></li>
+               <li><button class="book_btn"><a href="Appointment.html">Book an appointment</a></button></li>
             </ul>
         </nav>
         

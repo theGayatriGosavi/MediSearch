@@ -28,29 +28,80 @@ body, ul {
   }
 .logo
 {
+  position: relative;
   font-size: 50px;
+  margin-left: -144px;
+  margin-right: 168px;
   color: rgb(255, 255, 255);
-  text-shadow: #19161c;
-  text-shadow: -1px 1px 0 #000,
-                          1px 1px 0 #000,
-                         1px -1px 0 #000,
-                        -1px -1px 0 #000;
+  padding: auto;
+  width: 350px;
+  height: 75px;
+  color: #394657;
+  text-shadow: 0 1px 0 #CACACA;
+  background-color: transparent;
+  border: none;
+  outline: none;
+            
 }
 .navbar
 {
-    background-color: #9155a7; /*9155a7*/
-    height: 75px; 
+    background-color: #f2f2f2;  
+    height: 35px; 
     position: absolute;
     overflow: hidden;
     top: 0; 
     width: 100%; 
-    po
+    position: fixed;
 }
 
+.widgets
+{ display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Manrope,sans-serif;
+  width: 100%;
+  margin-left: 730px;
+}
+.widgets li
+{
+  display: inline-flex;
+  align-items: center;
+  padding: 0.625rem 1rem;
+  font-size: .875rem;
+  color: #73879e;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+.ion-earth
+{
+  font-family: 'ionicons' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.emergency-widget
+{
+  background-color: red;
+}
+ .emergency {
+  color: white;
+  font-size: .875rem;
+  padding: -2.1875rem 1rem;
+  width: auto;
+  display: flex;
+ 
+}
+
+/*
 .navbar li
 {
     display: inline-block;
-    padding: 15px 20px;
+    padding: 15px 30px;
     
 }
 .search-container
@@ -58,15 +109,6 @@ body, ul {
   float: right;
   padding-right: 400px;
 }
-.logo
-{
-    padding: auto;
-}
-
-.box{
-  position: relative;
-}
-
 .input {
   padding: 10px;
   width: 50px;
@@ -81,13 +123,12 @@ body, ul {
   outline: none;
   transition: .5s;
 }
-
 .box:hover input{
   width: 350px;
   background: #ffffff;
   border-radius: 10px;
 }
-.box i{  /*search icon*/
+.box i{  search icon
   position: absolute;
   top: 50%;
   right: 1px;
@@ -99,51 +140,143 @@ body, ul {
 .box:hover i{
   opacity: 0;
   z-index: -1;
-}
+} 
 
 /*NAVBAR 2*/
 
 .navbar2 
 {
-  background-color: #f2f2f2; 
-  height: 55px; 
-  top: 75px; 
-  width: 100%; 
-  position: absolute;
-  border-bottom: 5px solid rgb(255, 255, 255);
+  background-color: #ffffff;
+    height: 80px;
+    top: 35px;
+    width: 100%;
+    position: absolute;
+}
+.list
+{
+  list-style-type: none;
 }
 .navbar2 ul {
-  display: inline-block;
-  padding-top: 7px;
-  padding-left: 20px;
+  display: flex;
+  padding-left: 148px;
   background-color: transparent;
-  border: none;
-  outline: none;
   width: 100%;
   overflow: hidden;
-  border-bottom: 3px solid transparent;
+}
+.nav_opt
+{
+  margin: 7px;
+  display: flex;
+  font-family: Manrope,sans-serif;
+}
+.nav_opt li
+{
+  margin: 20px;
+}
 
+.nav_opt a:link
+{
+  text-decoration: none;
+}
+.nav_opt a:visited
+{
+  text-decoration: none;
+}
+.nav_opt li:hover
+{
+  margin-bottom: 0px;
+  border-bottom: 3px solid rgb(92, 147, 195);
+}
+.nav_opt a:active
+{
+  background-color: #427cc5;
 }
 .btn 
 {
-    color: rgb(0, 0, 0);
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 6px;
-    padding-bottom: 7px;
-    transition-duration: 0.4s;
-}
-.btn :hover
-{
-  background-color: #ffffffad; 
   color: rgb(0, 0, 0);
-  background-size: 30px 30px; 
-  
+  background-color: transparent;
+  font-size: 20px;
 }
+
+
+.list-choice{
+  cursor: pointer;
+  padding-top: 22px;
+}
+.list-choice input[type="radio"]{
+  position:absolute;
+  left:-9999px;
+}
+
+.list-choice-title {
+text-align: center;
+box-sizing: border-box;
+color: #000000;
+text-shadow: 0 1px 0 #CACACA;
+border-radius: 0.2em;
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.list-choice:hover .list-choice-title {
+border-radius:0 0 0 0;
+border-bottom: 5px solid white;
+}
+.list-choice-objects label:nth-last-of-type(1) span{
+  border-radius:0 0 0.2em 0.2em;
+}
+.list-choice input[type="radio"] + span {
+color: #000000;
+background: #ffffff;
+padding: 0.55em 1em;
+display: block;
+text-align: center;
+box-sizing: border-box;
+cursor: pointer;
+width: 100%;
+}
+.list-choice-objects {
+  position: relative;
+  top: 25px;
+box-sizing: border-box;
+overflow: hidden;
+width: 100%;
+max-height: 0;
+transition: all 250ms ease;
+
+}
+.list-choice:hover .list-choice-objects  input[type="radio"] + span {
+position: relative;
+top: 0;
+transition: all 250ms ease-in-out;
+}
+.list-choice:hover input[type="radio"] + span:hover {
+background:aliceblue;
+}
+.list-choice:hover input[type="radio"]:checked + span:hover {
+background:#74D68E;
+}
+.list-choice input[type="radio"]:checked + span {
+background: #74D68E;
+position: absolute;
+top: 0em;
+border-radius: 0.2em;
+}
+.list-choice:hover input[type="radio"]:checked + span {
+border-radius: 0;
+}
+.list-choice:hover .list-choice-objects label:nth-last-of-type(1) input[type="radio"]:checked + span{
+  border-radius:0 0 0.2em 0.2em;
+}
+
+.list-choice:hover .list-choice-objects {
+max-height: 540px;
+}
+
+
+
+
+
+
 
 .navbar2 button:last-child
 {
@@ -153,20 +286,21 @@ body, ul {
 
 .bgimg
 {
-  height: auto;
-  top: none;
-  position: initial;
+  margin-top: 540px;
+  height: 675px;
+  top: 40px;
   overflow: hidden;
+  background-size: cover;
+  background-position: center left;
 }
 .navbar3
 {
-  background-color: #9155a7; 
+  background-color: #2a3947; 
   height: 110px; 
-  top: 72px; 
+  top: 130px; 
   width: 100%; 
   position: relative;
   border-top: 5px solid rgb(255, 255, 255);
-  box-shadow: 10px 10px 5px 12px #e6e6e6;
 }
 .navbar3 ul {
   display: flex;
@@ -194,16 +328,16 @@ body, ul {
 { width: 260px;
   position: absolute;
   color: rgb(255, 255, 255);
-  background-color: #6d3f7d;
+  background-color: #1e2b36;
   border: none;
   font-size: 18px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 24px;
+  padding-top: 20px;
   padding-bottom: 15px;
   float: right;
   margin-left: 269px;
-  margin-top: 10px;
+  margin-top: 14px;
   margin-right: auto;
   overflow: hidden;
   transition-duration: 0.4s;
@@ -212,24 +346,26 @@ body, ul {
 {
   background-color: #0DB26B; 
   color: rgb(0, 0, 0);
-  
+  background-size: cover;
 }
 .docs
 {
   display: block;
-  color: #F2F2F2;
-  height: 300px; 
-  top: 100px; 
+  color: aliceblue;
+  height: 500px; 
+  top: 140px; 
   width: 100%; 
   position: relative;
+  background-color: aliceblue;
 }
 .docs h2
 {
   text-align: center;
-  color: #0DB26B;
+  color: #427cc5;
   font-size: 48px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 50;
+  padding-top: 65px;
 }
 .medicons
 {
@@ -248,22 +384,23 @@ body, ul {
 }
 .medicons .fa-calendar
 {
-  color: #ffffff;
+  color: #427cc5;
   position: absolute;
   margin-left: 32px;
   margin-top: 28px;
 }
 .calender
 {
-  background-color: #0DB26B;
+  background-color: #ffffff;
   height: 100px;
   width: 100px;
   border: 5px solid 0DB26B;
   border-radius: 100%;
+  box-shadow: 0.125rem 0.125rem 0.313rem rgb(0,0,0,.08);
 }
 .calender h3
 {
-  color: #0DB26B;
+  color: #1a1a1a;
   position: absolute;
   margin-top: 132px;
   font-family: Arial, Helvetica, sans-serif;
@@ -273,7 +410,7 @@ body, ul {
   font-weight: lighter;
 }
 .calender p{
-    color: #8b8888;
+    color: #99a4ad;
     position: absolute;
     margin-top: 222px;
     font-family: Arial, Helvetica, sans-serif;
@@ -286,22 +423,23 @@ body, ul {
 
 .medicons .fa-hospital-o
 {
-  color: #ffffff;
+  color: #427cc5;
   position: absolute;
   margin-left: 35px;
   margin-top: 29px;
 }
 .hospital
 {
-  background-color: #0DB26B;
+  background-color: #ffffff;
   height: 100px;
   width: 100px;
   border: 5px solid 0DB26B;
   border-radius: 100%;
+  box-shadow: 0.125rem 0.125rem 0.313rem rgb(0,0,0,.08);
 }
 .hospital h3
 {
-  color: #0DB26B;
+  color: #1a1a1a;
   position: absolute;
   margin-top: 132px;
   font-family: Arial, Helvetica, sans-serif;
@@ -312,7 +450,7 @@ body, ul {
   font-weight: lighter;
 }
 .hospital p{
-  color: #8b8888;
+  color: #99a4ad;
   position: absolute;
   margin-top: 222px;
   font-family: Arial, Helvetica, sans-serif;
@@ -324,22 +462,23 @@ body, ul {
 }
 .medicons .fa-user-md
 {
-  color: #ffffff;
+  color: #427cc5;
   position: absolute;
   margin-left: 36px;
   margin-top: 28px;
 }
 .usermd
 {
-  background-color: #0DB26B;
+  background-color: #ffffff;
   height: 100px;
   width: 100px;
   border: 5px solid 0DB26B;
   border-radius: 100%;
+  box-shadow: 0.125rem 0.125rem 0.313rem rgb(0,0,0,.08);
 }
 .usermd h3
 {
-  color: #0DB26B;
+  color: #1a1a1a;
   position: absolute;
   margin-top: 132px;
   font-family: Arial, Helvetica, sans-serif;
@@ -350,7 +489,7 @@ body, ul {
   font-weight: lighter;
 }
 .usermd p{
-  color: #8b8888;
+  color: #99a4ad;
   position: absolute;
   margin-top: 222px;
   font-family: Arial, Helvetica, sans-serif;
@@ -362,9 +501,9 @@ body, ul {
 }
 .footer
 {
-  background-color: #6DCCA3; 
+  background-color: #2a3947; 
   height: 110px; 
-  top: 280px; 
+  top: 260px; 
   width: 100%; 
   position: relative;
   border-top: 5px solid rgb(255, 255, 255);
@@ -377,7 +516,7 @@ body, ul {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   text-align: left;
-  margin-left: 55px;
+  margin-left: 110px;
 }
 .footer li
 {
