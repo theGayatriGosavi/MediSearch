@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+    background: #ffffff;
+    height: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+.container{
+    width: 100%;
+    border: 10cm;
+    height: 100%;
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+.logo
+{
+  position: relative;
+  font-size: 40px;
+  margin-left: -144px;
+  margin-right: 168px;
+  color: rgb(255, 255, 255);
+  padding: auto;
+  width: 350px;
+  height: 75px;
+  color: #394657;
+  text-shadow: 0 1px 0 #CACACA;
+  background-color: transparent;
+  border: none;
+  outline: none;
+            
+}
+.navbar
+{
+    background-color: white;  
+    border-bottom: 1px solid rgb(225, 225, 225);
+    height: 55px; 
+    position: absolute;
+    overflow: hidden;
+    top: 0; 
+    width: 100%; 
+    position: fixed;
+}
+
+.widgets
+{ display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Manrope,sans-serif;
+  width: 100%;
+  margin-left: 730px;
+}
+.widgets li
+{
+  display: inline-flex;
+  align-items: center;
+  padding: 0.625rem 1rem;
+  font-size: .875rem;
+  color: #73879e;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+.ion-earth
+{
+  font-family: 'ionicons' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.emergency-widget
+{
+  background-color: red;
+}
+ .emergency {
+  color: white;
+  font-size: .875rem;
+  padding: -2.1875rem 1rem;
+  width: auto;
+  display: flex;
+ 
+}
+
+/*
+.navbar li
+{
+    display: inline-block;
+    padding: 15px 30px;
+    
+}
+.search-container
+{
+  float: right;
+  padding-right: 400px;
+}
+.input {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: Comic Sans MS;
+  font-size: 26px;
+  color: #100404;
+  outline: none;
+  transition: .5s;
+}
+.box:hover input{
+  width: 350px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.box i{  search icon
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  transform: translate(-50%,-50%);
+  font-size: 26px;
+  color: #ffffff;
+  transition: .2s;
+}
+.box:hover i{
+  opacity: 0;
+  z-index: -1;
+} 
+
+/*NAVBAR 2*/
+
+.navbar2 
+{
+    background-color: #ffffff;
+    height: 80px;
+    top: 50px;
+    width: 100%;
+    position: absolute;
+    box-shadow: -12px 1px 2px 0px;
+}
+
+.list
+{
+  list-style-type: none;
+}
+.navbar2 ul {
+  display: flex;
+  padding-left: 148px;
+  background-color: transparent;
+  width: 100%;
+  overflow: hidden;
+}
+.nav_opt
+{
+  margin: 10px;
+  margin-left: 130px;
+  display: flex;
+  font-family: Lato,sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.nav_opt li
+{
+  color: black;
+  margin: 20px;
+}
+
+.nav_opt a:link
+{
+  color: black;
+  text-decoration: none;
+}
+.nav_opt a:visited
+{
+  text-decoration: none;
+}
+.nav_opt li:hover
+{
+  margin-bottom: 0px;
+  color: rgb(92, 147, 195);
+  border-bottom: 3px solid rgb(92, 147, 195);
+}
+.nav_opt a:active
+{
+  color: rgb(92, 147, 195);
+}
+.btn 
+{
+  
+  background-color: transparent;
+  font-size: 14px;
+}
+
+/*
+.list-choice{
+  cursor: pointer;
+  padding-top: 22px;
+}
+.list-choice input[type="radio"]{
+  position:absolute;
+  left:-9999px;
+}
+
+.list-choice-title {
+text-align: center;
+box-sizing: border-box;
+color: #000000;
+border-radius: 0.2em;
+font-size: 14px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.list-choice:hover .list-choice-title {
+border-radius:0 0 0 0;
+border-bottom: 5px solid white;
+}
+.list-choice-objects label:nth-last-of-type(1) span{
+  border-radius:0 0 0.2em 0.2em;
+}
+.list-choice input[type="radio"] + span {
+color: #000000;
+background: #ffffff;
+padding: 0.55em 1em;
+display: block;
+text-align: center;
+box-sizing: border-box;
+cursor: pointer;
+width: 100%;
+}
+.list-choice-objects {
+  position: relative;
+  top: 25px;
+box-sizing: border-box;
+overflow: hidden;
+width: 100%;
+max-height: 0;
+transition: all 250ms ease;
+
+}
+.list-choice:hover .list-choice-objects  input[type="radio"] + span {
+position: relative;
+top: 0;
+transition: all 250ms ease-in-out;
+}
+.list-choice:hover input[type="radio"] + span:hover {
+background:aliceblue;
+}
+.list-choice:hover input[type="radio"]:checked + span:hover {
+background:#74D68E;
+}
+.list-choice input[type="radio"]:checked + span {
+background: #74D68E;
+position: absolute;
+top: 0em;
+border-radius: 0.2em;
+}
+.list-choice:hover input[type="radio"]:checked + span {
+border-radius: 0;
+}
+.list-choice:hover .list-choice-objects label:nth-last-of-type(1) input[type="radio"]:checked + span{
+  border-radius:0 0 0.2em 0.2em;
+}
+
+.list-choice:hover .list-choice-objects {
+max-height: 540px;
+}
+*/
+
+.navbar2 button:last-child
+{
+  float: right;
+  padding-right: 20px;
+}
+.backdrop
+{
+    top: 133px;
+    position: relative;
+    background-image: url(backdrop_abt.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 5rem 0 7.5rem 0;
+    border: 0;
+}
+.backdrop:before
+{
+  content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(38,69,109,.7);
+    z-index: 1;
+}
+.backdrop h1
+{
+  font-family: sans-serif;
+    position: relative;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 700;
+    z-index: 2;
+    font-size: 40px;
+    margin-left: 75px;
+}
+.backdrop p
+{
+    background-color: rgba(255,255,255,.1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    font-family: Manorope,sans-serif;
+    height: 56px;
+    font-size: 18px;
+    padding: 17px 75px;
+    font-weight: lighter;
+}
+.dash
+{
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 463px;
+    border: 0;
+    height: 3px;
+    background-color: #427cc5;
+    width: 3.125rem;
+}
+.journey
+{
+    position: relative;
+    top: 185px;
+    margin-left: 145px;
+    width: 1000px;
+    color: #484848;
+    font-size: 1rem;
+    font-family: Lato,sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.9!important;
+
+}
+.process
+{
+    margin-top: 16.5rem!important;
+    position: relative;
+    text-align: center;
+    background-image: url(Screenshot\ 2023-11-02\ 154847.png);
+    background-size: cover;
+    background-position: center center;
+    margin: 20px;
+    padding: 10rem 0 5.5rem 0;
+    
+}
+.founder_col
+{
+  position: relative;
+    top: 20px;
+    height: 580px;
+    background-color: #f1f3f4;
+}
+.box
+{
+  max-width: 1140px;
+  display: flex;
+}
+.pic
+{
+  margin-top: 4.25rem!important;
+  position: relative;    width: 100%;    padding-right: 15px;    padding-left: 60px;
+    margin-left: 35px;
+}
+.pic img
+{
+  vertical-align: middle;
+  overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.img-thumbnail
+{
+  border: 1px solid #dedede;
+  border-radius:0.125rem;
+  padding:0.313rem;
+  background-color: #fff;
+  max-width: 100%;
+    height: auto;
+}
+.img-fluid
+{
+  max-width: 100%;
+}
+.rounded-circle
+{
+  border-radius: 50%!important;
+}
+.contents
+{
+  float: left;
+  position: relative;
+    padding-right: 15px;
+    margin-top: 4.25rem!important;
+    font-family: Lato,sans-serif;
+}
+.quote
+{
+  margin-left: 60px;
+}
+.footer
+{
+  background-color: #2a3947; 
+  height: 110px; 
+  top: 260px; 
+  width: 100%; 
+  position: relative;
+  border-top: 5px solid rgb(255, 255, 255);
+}
+.footer ul
+{
+  color: white;
+  font-size: 10px;
+  padding-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: 110px;
+}
+.footer li
+{
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+          
+            <ul class="widgets">
+              <li class="region-widget d-none d-lg-inline-flex"><i class="ion-earth"></i> Indian Subcontinent</li>
+              <li class="email-widget d-none d-lg-inline-flex"><i class="ion-mail-outline"></i> @MediSearch.com</li>
+              <li class="emergency-widget">
+                  <h4 class="emergency">            <!-- Emergency Number -->
+                      <span class="sub-text">Emergency</span>
+                      <span class="number">123-909-909</span><br/>
+                  </h4>
+              </li>
+          </ul>
+                <!-- <li class="search-container">
+                    <div class="box">
+                        <form name="search">
+                            <input type="text" class="input" placeholder="    Search" name="txt" onmouseout="this.value = ''; this.blur();">
+                        </form>
+                        <i class="fa fa-search"></i>
+                    </div>
+                </li>-->
+          
+        </nav> 
+      
+        <nav class="navbar2">
+          <ul class="list">
+              <button class="logo"><b>MediSearch</b> <i class="fa fa-stethoscope" style="font-size:40px;color:#394657"></i></button>
+              <div class="nav_opt">
+                <li href="" id="home" class="btn"><a href="Index.html">HOME</a></li>
+                <li href="" id="doc" class="btn"><a href="">ABOUT US</a></li>
+                <li href="" id="doc" class="btn"><a href="">SERVICES</a></li>
+                  <!--
+                    <div class="list-choice" style="width: 155px;">
+                    <div class="list-choice-title"><a href="">SERVICES</a></div>
+                    <div class="list-choice-objects" style="height: 430px;">
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Genral health</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Home visits</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Emergency</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>vaccination</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Blood Test</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Physical Exam</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Mental health</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Prevention and wellness</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Therapy</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Dialysis Clinics</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="Services"/>                         <span>Health Insurence</span>
+                      </label>
+                    </div>
+                  </div>
+                -->
+
+                
+                <li href="" id="consultancy" class="btn"><a href="">CONTACT</a></li>
+                <li id="lgsu" class="btn"><a href="loginandsignup.html">LOGIN/SIGNUP</a></li>
+              </div>
+            </ul>
+        </nav>
+        <div class="backdrop">
+          <h1>About Us</h1>
+          <p>
+            Home/AboutUs
+          </p>
+        </div>
+        <div class="journey">
+          <h1>Our Journey</h1>
+          <div class="dash"></div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, ducimus eos saepe mollitia doloremque omnis alias magni sunt repudiandae recusandae vero animi voluptatibus hic in dignissimos qui optio necessitatibus distinctio corporis enim accusamus. Laudantium debitis saepe adipisci perspiciatis quos nobis?</p>
+        </div>
+        <div class="process">
+          
+        </div>
+
+        <div class="founder_col">
+          <div class="box">
+            <div class="pic">
+              <img src="founder.jpg" class="img-fluid rounded-circle img-thumbnail" alt="">
+            </div>
+            <div class="contents">
+              <h1 style="    margin-block-start: 1em;
+              margin-block-end: 1em;
+              margin-inline-start: 50px;
+              margin-inline-end: 0px;">Words from our Founder</h1>
+
+              <h4 style="color: #427cc5;
+              font-size: 18px;
+              font-weight: 500;
+              font-family: Lato,sans-serif;
+              margin-block-start: -19px;
+              margin-block-end: 4em;
+              margin-inline-start: 57px;">Founder & Senior Gynae</h4>
+
+              <p style="display: block;
+              line-height: 1.8em!important;
+              margin-top: -51px;
+              margin-inline-start: 57px;
+              margin-bottom: 1rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo eos neque sequi similique, numquam recusandae facere doloribus modi quia vitae quae error corporis maxime quidem. Impedit reprehenderit fugit tempora iure.</p>
+
+              <p class="quote">
+                <b style="color: #CACACA;
+                font-size: 72px;">"</b>
+                <br>
+                <i>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One of blind text.</i>
+                <br>
+                <br>
+               <b>- Dr. Harry Lawrence</b> 
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <nav class="footer">
+          <ul style="list-style-type:none;">
+             <li> <h3>Privacy Policy</h3> </li>
+             <li> <h3>Terms & Conditions</h3> </li>
+             <li> <h3>Usage Rights</h3> </li>
+             <li style="float: right;"><h3>&copy; All Rights Reserved.</h3></li>
+          </ul>
+      </nav>
+        
+</body>
+</html>

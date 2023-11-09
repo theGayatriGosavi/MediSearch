@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d8ecff;
+            background: #d8ecff;
+            background-image: url(bg3.png);
+            background-repeat: no-repeat;
+            background-position: 18px 105px;
+           }
+
+
+.navbar
+{
+    background-color: white;  
+    height: 30px; 
+    position: absolute;
+    overflow: hidden;
+    top: 0; 
+    width: 100%; 
+    position: fixed;
+}
+
+.widgets
+{ display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Manrope,sans-serif;
+  width: 100%;
+  margin-left: 730px;
+}
+.widgets li
+{
+  display: inline-flex;
+  align-items: center;
+  padding: 0.625rem 1rem;
+  font-size: .875rem;
+  color: #73879e;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  padding-bottom: 20px;
+}
+.ion-earth
+{
+  font-family: 'ionicons' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.emergency-widget
+{
+  background-color: red;
+  height: 4px;
+}
+ .emergency {
+    height: 4px;
+  color: white;
+  font-size: .875rem;
+  padding: -2.1875rem 1rem;
+  width: auto;
+  display: flex;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+        #login-signup-container {
+            width: 385px;
+            height: 400px;
+            margin: 86px 812px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            position: relative;
+            overflow: hidden;
+            top: 85px;
+        }
+        #tab-container
+        {
+          position: relative;
+          width: 400px;
+        }
+        #tab-container ul
+        {
+            padding: 0;
+            margin-top: 0;
+            position: relative;
+            top: 0;
+            list-style-type: none;
+            display: -webkit-inline-box;
+        }
+
+        .tab {
+            width: 150px;
+            display: inline-block;
+            cursor: pointer;
+            padding: 20px 75px;
+            background-color: #ccc;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .active-tab {
+            width: 150px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        #login-form, #signup-form {
+            display: none;
+        }
+
+        #login-form input, #signup-form input {
+            display: block;
+            width: 275px;
+            padding: 10px;
+            margin: 27px 40px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        .btn
+        {
+            padding: 12px 50px;
+            margin: 25px 118px;
+            background-color: black;
+            color: white;
+            border: 1px solid;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar" style="left: 0px;">
+          
+            <ul class="widgets">
+              <li class="region-widget d-none d-lg-inline-flex"><i class="ion-earth"></i> Indian Subcontinent</li>
+              <li class="email-widget d-none d-lg-inline-flex"><i class="ion-mail-outline"></i> @MediSearch.com</li>
+              <li class="emergency-widget">
+                  <h4 class="emergency">            <!-- Emergency Number -->
+                      <span class="sub-text">Emergency</span>
+                      <span class="number">123-909-909</span><br/>
+                  </h4>
+              </li>
+          </ul>
+                <!-- <li class="search-container">
+                    <div class="box">
+                        <form name="search">
+                            <input type="text" class="input" placeholder="    Search" name="txt" onmouseout="this.value = ''; this.blur();">
+                        </form>
+                        <i class="fa fa-search"></i>
+                    </div>
+                </li>-->
+          
+        </nav> 
+
+
+
+    <div id="login-signup-container">
+        <div id="tab-container">
+            <ul>
+                <li style="
+                width: 195px;
+                padding-left: 0;
+                margin: -1px -21px;
+            ">
+                    <div class="tab" id="login-tab">Login</div>
+                </li>
+                <li style="
+                margin: -1px 38px;
+                width: 195px;
+            ">
+                    <div class="tab" id="signup-tab">Signup</div>
+                </li>
+            </ul>   
+        </div>
+        <form id="login-form">
+            <input type="text" placeholder="Username or Email">
+            <input type="password" placeholder="Password">
+            <h5 style="font-weight: lighter; color: #427cc5; padding-left: 48px; font-size: 12px;">Forgot password?</h5>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <form id="signup-form">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="btn">Signup</button>
+    </div>
+
+    <script>
+        const loginTab = document.getElementById('login-tab');
+        const signupTab = document.getElementById('signup-tab');
+        const loginForm = document.getElementById('login-form');
+        const signupForm = document.getElementById('signup-form');
+
+        loginTab.addEventListener('click', () => {
+            loginTab.classList.add('active-tab');
+            signupTab.classList.remove('active-tab');
+            loginForm.style.display = 'block';
+            signupForm.style.display = 'none';
+        });
+
+        signupTab.addEventListener('click', () => {
+            loginTab.classList.remove('active-tab');
+            signupTab.classList.add('active-tab');
+            loginForm.style.display = 'none';
+            signupForm.style.display = 'block';
+        });
+
+        // Initially, show the login form
+        loginTab.click();
+    </script>
+</body>
+</html>

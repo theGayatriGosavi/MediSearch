@@ -25,11 +25,12 @@ body{
 body, ul {
     margin: 0;
     padding: 0;
+    height: 100%;
   }
 .logo
 {
   position: relative;
-  font-size: 50px;
+  font-size: 40px;
   margin-left: -144px;
   margin-right: 168px;
   color: rgb(255, 255, 255);
@@ -45,13 +46,15 @@ body, ul {
 }
 .navbar
 {
-    background-color: #f2f2f2;  
-    height: 35px; 
+    background-color: white;  
+    border-bottom: 1px solid rgb(225, 225, 225);
+    height: 55px; 
     position: absolute;
     overflow: hidden;
     top: 0; 
     width: 100%; 
     position: fixed;
+    z-index: 2;
 }
 
 .widgets
@@ -146,12 +149,14 @@ body, ul {
 
 .navbar2 
 {
-  background-color: #ffffff;
+    background-color: #ffffff;
     height: 80px;
-    top: 35px;
+    top: 50px;
     width: 100%;
     position: absolute;
+    box-shadow: -12px 1px 2px 0px;
 }
+
 .list
 {
   list-style-type: none;
@@ -165,17 +170,22 @@ body, ul {
 }
 .nav_opt
 {
-  margin: 7px;
+  margin: 10px;
+  margin-left: 130px;
   display: flex;
-  font-family: Manrope,sans-serif;
+  font-family: Lato,sans-serif;
+  font-weight: bold;
+  color: black;
 }
 .nav_opt li
 {
+  color: black;
   margin: 20px;
 }
 
 .nav_opt a:link
 {
+  color: black;
   text-decoration: none;
 }
 .nav_opt a:visited
@@ -185,20 +195,21 @@ body, ul {
 .nav_opt li:hover
 {
   margin-bottom: 0px;
+  color: rgb(92, 147, 195);
   border-bottom: 3px solid rgb(92, 147, 195);
 }
 .nav_opt a:active
 {
-  background-color: #427cc5;
+  color: rgb(92, 147, 195);
 }
 .btn 
 {
-  color: rgb(0, 0, 0);
+  
   background-color: transparent;
-  font-size: 20px;
+  font-size: 14px;
 }
 
-
+/*
 .list-choice{
   cursor: pointer;
   padding-top: 22px;
@@ -212,9 +223,8 @@ body, ul {
 text-align: center;
 box-sizing: border-box;
 color: #000000;
-text-shadow: 0 1px 0 #CACACA;
 border-radius: 0.2em;
-font-size: 18px;
+font-size: 14px;
 font-family: Arial, Helvetica, sans-serif;
 }
 .list-choice:hover .list-choice-title {
@@ -271,8 +281,7 @@ border-radius: 0;
 .list-choice:hover .list-choice-objects {
 max-height: 540px;
 }
-
-
+*/
 
 
 
@@ -286,21 +295,44 @@ max-height: 540px;
 
 .bgimg
 {
-  margin-top: 540px;
+  margin-top: 135px;
   height: 675px;
-  top: 40px;
+  top: 200px;
   overflow: hidden;
+  background-image: url(Backdrop.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center left;
+  background-position: center center;
+}
+.bgimg h1
+{
+  position: relative;
+    top: 210px;
+    /* padding-top: 20px; */
+    margin-left: 81px;
+    font-size: 46px;
+    /* font-weight: 800; */
+    transition: none 0s ease 0s;
+}
+.bgimg p{
+  width: 450px;
+    margin-left: 86px;
+    padding-top: 215px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    color: #484848;
+    font-size: 1rem;
+    font-family: Lato,sans-serif;
+    font-weight: 400;
 }
 .navbar3
 {
   background-color: #2a3947; 
   height: 110px; 
-  top: 130px; 
+  top: 0px; 
   width: 100%; 
   position: relative;
-  border-top: 5px solid rgb(255, 255, 255);
+  
 }
 .navbar3 ul {
   display: flex;
@@ -323,12 +355,30 @@ max-height: 540px;
   text-align: left;
   margin-left: 55px;
 }
-
+.book_btn a:link
+{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.book_btn a:visited
+{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.book_btn li:hover
+{
+  margin-bottom: 0px;
+  border-bottom: 3px solid rgb(92, 147, 195);
+}
+.book_btn a:active
+{
+  color: black;
+}
 .book_btn
 { width: 260px;
   position: absolute;
   color: rgb(255, 255, 255);
-  background-color: #1e2b36;
+  background-color: #37495b;
   border: none;
   font-size: 18px;
   padding-left: 10px;
@@ -341,31 +391,90 @@ max-height: 540px;
   margin-right: auto;
   overflow: hidden;
   transition-duration: 0.4s;
+  text-decoration: none;
 }
 .book_btn :hover
-{
-  background-color: #0DB26B; 
-  color: rgb(0, 0, 0);
+{ 
+  color: aliceblue;
   background-size: cover;
+}
+.abt_hosp
+{
+  display: flex;
+}
+.abt_hosp img
+{
+  width: 545px;
+  margin: 90px;
+}
+.abt_hosp .content h3
+{
+  font-family: sans-serif;
+    font-size: 32px;
+    margin: 10px;
+}
+.abt_hosp .content p
+{
+  margin: 20px 10px;
+    font-family: sans-serif;
+    line-height: 20px;
+}
+.abt_hosp .content
+{
+  width: 500px;
+    position: relative;
+    top: 130px;
+    margin-left: -46px;
+    z-index: -1;
+}
+.abt_hosp .content .h3
+{
+  font-family: Lato,sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    margin: 20px;
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+.content .btn1
+{
+  background-color: #394657;
+  width: 250px;
+  height: 60px;
+  position: relative;
+  top: 20px;
+  border-radius: 5px;
+  box-shadow: 0.125rem 0.125rem 0.313rem rgb(0 0 0 / 36%);
+}
+.content .btn1 a
+{
+  text-decoration: none;
+    color: white;
+    position: relative;
+    margin: 52px;
+    top: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
 }
 .docs
 {
-  display: block;
-  color: aliceblue;
-  height: 500px; 
-  top: 140px; 
-  width: 100%; 
-  position: relative;
-  background-color: aliceblue;
+  z-index: -1;
+    display: block;
+    color: white;
+    height: 550px;
+    top: 5px;
+    width: 100%;
+    position: relative;
+    background-color: #427cc5!important;
 }
 .docs h2
 {
   text-align: center;
-  color: #427cc5;
-  font-size: 48px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 50;
-  padding-top: 65px;
+    color: #ffffff;
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding-top: 65px;
 }
 .medicons
 {
@@ -380,7 +489,7 @@ max-height: 540px;
   border: #ffffff;
   border: #000;
   outline: #000;
-  margin: 61px 140px 134px 173px;
+  margin: 61px 140px 134px 180px;
 }
 .medicons .fa-calendar
 {
@@ -396,29 +505,31 @@ max-height: 540px;
   width: 100px;
   border: 5px solid 0DB26B;
   border-radius: 100%;
-  box-shadow: 0.125rem 0.125rem 0.313rem rgb(0,0,0,.08);
+  box-shadow: 0.125rem 0.125rem 0.313rem rgb(0, 0, 0);
 }
 .calender h3
 {
-  color: #1a1a1a;
+  color: white;
   position: absolute;
   margin-top: 132px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin-left: -47px ;
   font-size: 32px;
-  font-weight: lighter;
+  font-weight: 600;
 }
 .calender p{
-    color: #99a4ad;
-    position: absolute;
-    margin-top: 222px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-left: -114px;
-    font-size: 18px;
-    font-weight: lighter;
-    width: 335px;
+  color: white;
+  position: absolute;
+  margin-top: 222px;
+  font-family: Lato,sans-serif;
+  text-align: center;
+  margin-left: -114px;
+  font-size: 16px;
+  font-weight: lighter;
+  width: 335px;
+  line-height: 1.7em;
+  opacity: 0.8;
 }
 
 .medicons .fa-hospital-o
@@ -435,11 +546,11 @@ max-height: 540px;
   width: 100px;
   border: 5px solid 0DB26B;
   border-radius: 100%;
-  box-shadow: 0.125rem 0.125rem 0.313rem rgb(0,0,0,.08);
+  box-shadow: 0.125rem 0.125rem 0.313rem rgb(0, 0, 0);
 }
 .hospital h3
 {
-  color: #1a1a1a;
+  color: white;
   position: absolute;
   margin-top: 132px;
   font-family: Arial, Helvetica, sans-serif;
@@ -447,18 +558,20 @@ max-height: 540px;
   margin-left: -45px;
   width: 200px;
   font-size: 32px;
-  font-weight: lighter;
+  font-weight: 600;
 }
 .hospital p{
-  color: #99a4ad;
-  position: absolute;
-  margin-top: 222px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-left: -114px;
-  font-size: 18px;
-  font-weight: lighter;
-  width: 335px;
+  color: white;
+    position: absolute;
+    margin-top: 222px;
+    font-family: Lato,sans-serif;
+    text-align: center;
+    margin-left: -114px;
+    font-size: 16px;
+    font-weight: lighter;
+    width: 335px;
+    line-height: 1.7em;
+    opacity: 0.8;
 }
 .medicons .fa-user-md
 {
@@ -474,11 +587,11 @@ max-height: 540px;
   width: 100px;
   border: 5px solid 0DB26B;
   border-radius: 100%;
-  box-shadow: 0.125rem 0.125rem 0.313rem rgb(0,0,0,.08);
+  box-shadow: 0.125rem 0.125rem 0.313rem rgb(0, 0, 0);
 }
 .usermd h3
 {
-  color: #1a1a1a;
+  color: white;
   position: absolute;
   margin-top: 132px;
   font-family: Arial, Helvetica, sans-serif;
@@ -486,18 +599,107 @@ max-height: 540px;
   margin-left: -47px ;
   width: 200px;
   font-size: 32px;
-  font-weight: lighter;
+  font-weight: 600;
 }
 .usermd p{
-  color: #99a4ad;
-  position: absolute;
-  margin-top: 222px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-left: -114px;
-  font-size: 18px;
-  font-weight: lighter;
-  width: 335px;
+  color: white;
+    position: absolute;
+    margin-top: 222px;
+    font-family: Lato,sans-serif;
+    text-align: center;
+    margin-left: -114px;
+    font-size: 16px;
+    font-weight: lighter;
+    width: 335px;
+    line-height: 1.7em;
+    opacity: 0.8;
+}
+.departments h3{
+  position: relative;
+    top: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+.departments p
+{
+  position: relative;
+    color: gray;
+    top: 37px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10px;
+    opacity: 0.8;
+    letter-spacing: 0.6px;
+}
+.departments img
+{
+  margin: 81px 31px;
+    width: 1200px;
+}
+
+.consultation
+{
+  height: 399px;
+  background-image: url(bg3.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  padding-bottom: 5rem!important;
+}
+.consultation h3{
+  width: 100%;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 32px;
+    padding-left: 600px;
+    padding-top: 58px;
+    z-index: 1;
+}
+.consultation p{
+  width: 90%;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #383838;
+    opacity: 0.8;
+    padding-left: 602px;
+    padding-top: 14px;
+    z-index: 1;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    display: block;
+    line-height: 1.7em!important;
+}
+.vc
+{
+  position: relative;
+    width: 240px;
+    height: 55px;
+    margin-top: 28px;
+    margin-left: 603px;
+    background-color: #427cc5;
+    border-radius: 5px;
+    box-shadow: 0.125rem 0.125rem 0.313rem rgb(0 0 0 / 36%);
+}
+.vc a
+{
+  text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    position: relative;
+    top: 17px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.vc i
+{
+  
+}
+.far fa-video::before
+{
+  content: "\eda2";
 }
 .footer
 {
