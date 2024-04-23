@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orthopaedics</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8c1b9383db.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+    background: #ffffff;
+    height: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+.container{
+    width: 100%;
+    border: 10cm;
+    height: 100%;
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+.logo
+{
+  position: relative;
+  font-size: 40px;
+  margin-left: -144px;
+  margin-right: 168px;
+  color: rgb(255, 255, 255);
+  padding: auto;
+  width: 350px;
+  height: 75px;
+  color: #394657;
+  text-shadow: 0 1px 0 #CACACA;
+  background-color: transparent;
+  border: none;
+  outline: none;
+            
+}
+.navbar
+{
+    background-color: white;  
+    border-bottom: 1px solid rgb(225, 225, 225);
+    height: 55px; 
+    position: absolute;
+    overflow: hidden;
+    top: 0; 
+    width: 100%; 
+    position: fixed;
+    z-index: 100;
+}
+
+.widgets
+{ display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Manrope,sans-serif;
+  width: 100%;
+  margin-left: 730px;
+}
+.widgets li
+{
+  display: inline-flex;
+  align-items: center;
+  padding: 0.625rem 1rem;
+  font-size: .875rem;
+  color: #73879e;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+.ion-earth
+{
+  font-family: 'ionicons' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.emergency-widget
+{
+  background-color: red;
+}
+ .emergency {
+  color: white;
+  font-size: .875rem;
+  padding: -2.1875rem 1rem;
+  width: auto;
+  display: flex;
+ 
+}
+
+
+.navbar2 
+{
+    background-color: #ffffff;
+    height: 80px;
+    top: 50px;
+    width: 100%;
+    position: absolute;
+    box-shadow: -12px 1px 2px 0px;
+    z-index: 100;
+}
+
+.list
+{
+  list-style-type: none;
+}
+.navbar2 ul {
+  display: flex;
+  padding-left: 148px;
+  background-color: transparent;
+  width: 100%;
+  overflow: hidden;
+}
+.nav_opt
+{
+  margin: 10px;
+  margin-left: 130px;
+  display: flex;
+  font-family: Lato,sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.nav_opt li
+{
+  color: black;
+  margin: 20px;
+}
+
+.nav_opt a:link
+{
+  color: black;
+  text-decoration: none;
+}
+.nav_opt a:visited
+{
+  text-decoration: none;
+}
+.nav_opt li:hover
+{
+  margin-bottom: 0px;
+  color: rgb(92, 147, 195);
+  border-bottom: 3px solid rgb(92, 147, 195);
+}
+.nav_opt a:active
+{
+  color: rgb(92, 147, 195);
+}
+.btn 
+{
+  
+  background-color: transparent;
+  font-size: 14px;
+}
+
+
+.navbar2 button:last-child
+{
+  float: right;
+  padding-right: 20px;
+}
+.backdrop
+{
+    top: 133px;
+    position: relative;
+    background-image: url(backdrop_abt.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 5rem 0 7.5rem 0;
+    border: 0;
+}
+.backdrop:before
+{
+  content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(38,69,109,.7);
+    z-index: 1;
+}
+.backdrop h1
+{
+  font-family: sans-serif;
+    position: relative;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 700;
+    z-index: 2;
+    font-size: 40px;
+    margin-left: 75px;
+}
+.backdrop p
+{
+    background-color: rgba(255,255,255,.1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    font-family: Manorope,sans-serif;
+    height: 56px;
+    font-size: 18px;
+    padding: 17px 75px;
+    font-weight: lighter;
+}
+.pic
+{
+    margin-top: -15px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 60px;
+    margin-left: -20px;
+}
+.pic img {
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+.img-fluid {
+    max-width: 100%;
+}
+.img-thumbnail {
+    border: 1px solid #dedede;
+    border-radius: 0.125rem;
+    padding: 0.313rem;
+    background-color: #fff;
+    max-width: 100%;
+    height: auto;
+}
+.box1{
+    display: block;
+    width: 315px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    padding: 1.875rem;
+    text-align: center;
+    transition: 350ms ease all;
+    color: blue;
+    background-color: white!important;
+    
+}
+
+.doc1
+{
+    color:black ;
+    padding: 20px;
+}
+.doc1 p
+{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+.doc1 a
+{
+    text-decoration: none;
+    color: black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: aliceblue;
+    font-size: 20px;
+}
+.footer
+{
+  background-color: #2a3947; 
+  height: 110px; 
+  top: 260px; 
+  width: 100%; 
+  position: relative;
+  border-top: 5px solid rgb(255, 255, 255);
+}
+.footer ul
+{
+  color: white;
+  font-size: 10px;
+  padding-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: 110px;
+}
+.footer li
+{
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+          
+            <ul class="widgets">
+              <li class="region-widget d-none d-lg-inline-flex"><i class="ion-earth"></i> Indian Subcontinent</li>
+              <li class="email-widget d-none d-lg-inline-flex"><i class="ion-mail-outline"></i> @MediSearch.com</li>
+              <li class="emergency-widget">
+                  <h4 class="emergency">            <!-- Emergency Number -->
+                      <span class="sub-text">Emergency</span>
+                      <span class="number">123-909-909</span><br/>
+                  </h4>
+              </li>
+          </ul>
+                <!-- <li class="search-container">
+                    <div class="box">
+                        <form name="search">
+                            <input type="text" class="input" placeholder="    Search" name="txt" onmouseout="this.value = ''; this.blur();">
+                        </form>
+                        <i class="fa fa-search"></i>
+                    </div>
+                </li>-->
+          
+        </nav> 
+      
+        <nav class="navbar2">
+          <ul class="list">
+              <button class="logo"><b>MediSearch</b> <i class="fa fa-stethoscope" style="font-size:40px;color:#394657"></i></button>
+              <div class="nav_opt">
+                <li href="" id="home" class="btn"><a href="Index.html">HOME</a></li>
+                <li href="" id="doc" class="btn"><a href="AboutUs.html">ABOUT US</a></li>
+                <li href="" id="doc" class="btn"><a href="Services.html">SERVICES</a></li>
+                <li href="" id="consultancy" class="btn"><a href="Contact.html">CONTACT</a></li>
+                <li id="lgsu" class="btn"><a href="login.html">LOGIN/SIGNUP</a></li>
+              </div>
+            </ul>
+        </nav>
+        <div class="backdrop">
+          <h1>Specialist Doctors</h1>
+          <p>
+           Speciality / Orthopaedics
+          </p>
+        </div>
+        <div class="row1" style="position: relative;
+        top: 200px;">
+            <ul style="list-style-type: none;
+            display: flex;">
+                <li>
+                    <div class="box1">
+                        <div class="pic">
+                            <img src="doctor_1.jpg" class="img-fluid rounded-circle img-thumbnail" alt="">
+                        </div>
+                        <div class="doc1">
+                            <h2>David Paulson</h2>
+                            <br>
+                            <p>Head Of Department</p>
+                            <br>
+                            <p><i class="fa-solid fa-phone" style="color: #427cc5;"></i> 0093-513-244</p>
+                            <p><i class="fa-solid fa-envelope" style="color: #427cc5;"></i> Paulson@MediSearch.com</p>
+                            <br>
+                            <br>
+                            <a href="">View profile</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box1">
+                        <div class="pic">
+                            <img src="doctor_2.jpg" class="img-fluid rounded-circle img-thumbnail" alt="">
+                        </div>
+                        <div class="doc1">
+                            <h2>Merri Hoffman</h2>
+                            <br>
+                            <p>Head Of Department</p>
+                            <br>
+                            <p><i class="fa-solid fa-phone" style="color: #427cc5;"></i> 0093-513-244</p>
+                            <p><i class="fa-solid fa-envelope" style="color: #427cc5;"></i> Merri@MediSearch.com</p>
+                            <br>
+                            <br>
+                            <a href="">View profile</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box1">
+                        <div class="pic">
+                            <img src="doctor_3.jpg" class="img-fluid rounded-circle img-thumbnail" alt="">
+                        </div>
+                        <div class="doc1">
+                            <h2>Kathy Cruse</h2>
+                            <br>
+                            <p>Head Of Department</p>
+                            <br>
+                            <p><i class="fa-solid fa-phone" style="color: #427cc5;"></i> 0093-513-244</p>
+                            <p><i class="fa-solid fa-envelope" style="color: #427cc5;"></i> Kathy@MediSearch.com</p>
+                            <br>
+                            <br>
+                            <a href="">View profile</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box1">
+                        <div class="pic">
+                            <img src="doctor_4.jpg" class="img-fluid rounded-circle img-thumbnail" alt="">
+                        </div>
+                        <div class="doc1">
+                            <h2>Floyd Birdsong</h2>
+                            <br>
+                            <p>Head Of Department</p>
+                            <br>
+                            <p><i class="fa-solid fa-phone" style="color: #427cc5;"></i> 0093-513-244</p>
+                            <p><i class="fa-solid fa-envelope" style="color: #427cc5;"></i> Floyd@MediSearch.com</p>
+                            <br>
+                            <br>
+                            <a href="">View profile</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <nav class="footer">
+            <ul style="list-style-type:none;">
+               <li> <h3>Privacy Policy</h3> </li>
+               <li> <h3>Terms & Conditions</h3> </li>
+               <li> <h3>Usage Rights</h3> </li>
+               <li style="float: right;"><h3>&copy; All Rights Reserved.</h3></li>
+            </ul>
+        </nav>
+    
+</body>
+</html>

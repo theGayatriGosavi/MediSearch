@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <script src="https://kit.fontawesome.com/8c1b9383db.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+    background: #ffffff;
+    height: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+.container{
+    width: 100%;
+    border: 10cm;
+    height: 100%;
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+.logo
+{
+  position: relative;
+  font-size: 40px;
+  margin-left: -144px;
+  margin-right: 168px;
+  color: rgb(255, 255, 255);
+  padding: auto;
+  width: 350px;
+  height: 75px;
+  color: #394657;
+  text-shadow: 0 1px 0 #CACACA;
+  background-color: transparent;
+  border: none;
+  outline: none;
+            
+}
+.navbar
+{
+    background-color: white;  
+    border-bottom: 1px solid rgb(225, 225, 225);
+    height: 55px; 
+    position: absolute;
+    overflow: hidden;
+    top: 0; 
+    width: 100%; 
+    position: fixed;
+    z-index: 100;
+}
+
+.widgets
+{ display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Manrope,sans-serif;
+  width: 100%;
+  margin-left: 730px;
+}
+.widgets li
+{
+  display: inline-flex;
+  align-items: center;
+  padding: 0.625rem 1rem;
+  font-size: .875rem;
+  color: #73879e;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+.ion-earth
+{
+  font-family: 'ionicons' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.emergency-widget
+{
+  background-color: red;
+}
+ .emergency {
+  color: white;
+  font-size: .875rem;
+  padding: -2.1875rem 1rem;
+  width: auto;
+  display: flex;
+ 
+}
+
+
+.navbar2 
+{
+    background-color: #ffffff;
+    height: 80px;
+    top: 50px;
+    width: 100%;
+    position: absolute;
+    box-shadow: -12px 1px 2px 0px;
+}
+
+.list
+{
+  list-style-type: none;
+}
+.navbar2 ul {
+  display: flex;
+  padding-left: 148px;
+  background-color: transparent;
+  width: 100%;
+  overflow: hidden;
+}
+.nav_opt
+{
+  margin: 10px;
+  margin-left: 130px;
+  display: flex;
+  font-family: Lato,sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.nav_opt li
+{
+  color: black;
+  margin: 20px;
+}
+
+.nav_opt a:link
+{
+  color: black;
+  text-decoration: none;
+}
+.nav_opt a:visited
+{
+  text-decoration: none;
+}
+.nav_opt li:hover
+{
+  margin-bottom: 0px;
+  color: rgb(92, 147, 195);
+  border-bottom: 3px solid rgb(92, 147, 195);
+}
+.nav_opt a:active
+{
+  color: rgb(92, 147, 195);
+}
+.btn 
+{
+  
+  background-color: transparent;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+
+.navbar2 button:last-child
+{
+  float: right;
+  padding-right: 20px;
+}
+.backdrop
+{
+    top: 133px;
+    position: relative;
+    background-image: url(backdrop_abt.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 5rem 0 7.5rem 0;
+    border: 0;
+}
+.backdrop:before
+{
+  content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(38,69,109,.7);
+    z-index: 1;
+}
+.backdrop h1
+{
+  font-family: sans-serif;
+    position: relative;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 700;
+    z-index: 2;
+    font-size: 40px;
+    margin-left: 75px;
+}
+.backdrop p
+{
+    background-color: rgba(255,255,255,.1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    font-family: Manorope,sans-serif;
+    height: 56px;
+    font-size: 18px;
+    padding: 17px 75px;
+    font-weight: lighter;
+}
+
+form {
+    display: block;
+    margin-top: 170px;
+    margin-left: 80px;
+    margin-right: 80px;
+    position: relative;
+    
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: -15px;
+}
+.col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;}
+.form-group {
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+.form-control {
+    font-family: Manrope,sans-serif;
+    border-color: #dedede;
+    border-width: 1px;
+    color: #81838a;
+    box-shadow: none;
+    border-radius: 0.125rem;
+    padding: 0.5rem 0.75rem;
+    height: 2.825rem;
+    position: relative;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 11px;}
+
+
+
+.footer
+{
+  background-color: #2a3947; 
+  height: 110px; 
+  top: 50px; 
+  width: 100%; 
+  position: relative;
+  border-top: 5px solid rgb(255, 255, 255);
+}
+.footer ul
+{
+  color: white;
+  font-size: 10px;
+  padding-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: 110px;
+}
+.footer li
+{
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+            <nav class="navbar">
+              
+                <ul class="widgets">
+                  <li class="region-widget d-none d-lg-inline-flex"><i class="ion-earth"></i> Indian Subcontinent</li>
+                  <li class="email-widget d-none d-lg-inline-flex"><i class="ion-mail-outline"></i> @MediSearch.com</li>
+                  <li class="emergency-widget">
+                      <h4 class="emergency">            <!-- Emergency Number -->
+                          <span class="sub-text">Emergency</span>
+                          <span class="number">123-909-909</span><br/>
+                      </h4>
+                  </li>
+              </ul>
+                    <!-- <li class="search-container">
+                        <div class="box">
+                            <form name="search">
+                                <input type="text" class="input" placeholder="    Search" name="txt" onmouseout="this.value = ''; this.blur();">
+                            </form>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </li>-->
+              
+            </nav> 
+          
+            <nav class="navbar2">
+              <ul class="list">
+                  <button class="logo"><b>MediSearch</b> <i class="fa fa-stethoscope" style="font-size:40px;color:#394657"></i></button>
+                  <div class="nav_opt">
+                    <li href="" id="home" class="btn"><a href="Index.html">HOME</a></li>
+                    <li href="" id="doc" class="btn"><a href="AboutUs.html">ABOUT US</a></li>
+                    <li href="" id="doc" class="btn"><a href="Services.html">SERVICES</a></li>
+                    <li href="" id="consultancy" class="btn"><a href="Contact.html">CONTACT</a></li>
+                    <li id="lgsu" class="btn"><a href="Index.html">LOGOUT</a></li>
+                  </div>
+                </ul>
+            </nav>
+            <div class="backdrop">
+              <h1>Book Appointment</h1>
+              <p>
+                Home / Book Appointment
+              </p>
+            </div>
+            <form>
+                <h1 style="padding: 10px;">Online Appointment Form</h1>
+                <p style="color: #aeaeae;
+                padding: 10px;">Please ensure accurate completion of the form to facilitate prompt and error-free processing.</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Your First Name" fdprocessedid="9jtteh">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Your Last Name" fdprocessedid="imnxg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Full Address" fdprocessedid="e6eph">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="City" fdprocessedid="rnsmjo">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Your Phone Number" fdprocessedid="ssjspr">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Your Email ID" fdprocessedid="nsq6x5">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input class="form-control date-select hasDatepicker" type="text" placeholder="Date Of Birth" id="dp1701292618296" fdprocessedid="do1fzy">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <select class="form-control" tabindex="-98" fdprocessedid="br6ga">
+                                <option>Select Slot</option>
+                                <option>9:00 p.m. - 12:00 p.m.</option>
+                                <option>12:00 p.m. - 4:00 p.m.</option>
+                                <option>4:00 p.m. - 8:00 p.m.</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12" style="    margin-left: 11px;">
+                        <fieldset style="padding: 20px;">
+                            <legend>Emergency Details</legend>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Contact Person" fdprocessedid="qkd2en">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3" style="padding: 10px;">
+                                    <div class="form-group">
+                                        <select class="form-control" tabindex="-98" fdprocessedid="7mxidb">
+                                            <option>Blood Group</option>
+                                            <option>A+</option>
+                                            <option>B+</option>
+                                            <option>AB-</option>
+                                            <option>O+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3" style="padding: 10px;">
+                                    <div class="form-group">
+                                        <select class="form-control" tabindex="-98" fdprocessedid="2l6zk">
+                                            <option>Age</option>
+                                            <option>18-40</option>
+                                            <option>41-60</option>
+                                            <option>61+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Willing to donate Blood</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label>Select Gender : </label>
+                                    <div class="custom-control custom-radio custom-control-inline ml-20">
+                                        <input type="radio" id="genderRadio1" name="genderRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="genderRadio1">Male</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="genderRadio2" name="genderRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="genderRadio2">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-6">
+                        <fieldset style="padding: 20px;">
+                            <legend>Allergies, If Any</legend>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Allergy 1" fdprocessedid="23qy5q">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Allergy 2" fdprocessedid="tj2v65">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Allergy 3" fdprocessedid="9daxj">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-6">
+                        <fieldset style="padding: 20px;">
+                            <legend>Services Needed</legend>
+                            <div class="form-group mb-0">
+                                <div class="custom-control custom-checkbox mb-10">
+                                    <input type="checkbox" class="custom-control-input" id="disease1">
+                                    <label class="custom-control-label" for="disease1">Blood pressure check</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-10">
+                                    <input type="checkbox" class="custom-control-input" id="disease2">
+                                    <label class="custom-control-label" for="disease2">RBC count check</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-10">
+                                    <input type="checkbox" class="custom-control-input" id="disease3">
+                                    <label class="custom-control-label" for="disease3">Bone marrow</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-10">
+                                    <input type="checkbox" class="custom-control-input" id="disease4">
+                                    <label class="custom-control-label" for="disease4">Joint lubrication</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-10">
+                                    <input type="checkbox" class="custom-control-input" id="disease5">
+                                    <label class="custom-control-label" for="disease5">Eye sight checkup</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="disease6">
+                                    <label class="custom-control-label" for="disease6">Liver profile</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Special Message" style="width: 1120px;
+                            height: 150px;
+                            margin: 15px 10px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <a href="http://127.0.0.1:5500/public/Confirmation.html?"><button class="btn btn-primary" fdprocessedid="taui2" style="font-size: 16px;
+                    margin-top: 25px;
+                    padding: 20px;
+                    border: 1px solid #427cc5;
+                    border-radius: 30px;
+                    background-color: #427cc5;
+                    color: white;"><i class="ion-paper-plane-outline icon-left"></i> Book Appointment</button></a>
+                </div>
+            </form>
+            <nav class="footer">
+                <ul style="list-style-type:none;">
+                   <li> <h3>Privacy Policy</h3> </li>
+                   <li> <h3>Terms & Conditions</h3> </li>
+                   <li> <h3>Usage Rights</h3> </li>
+                   <li style="float: right;"><h3>&copy; All Rights Reserved.</h3></li>
+                </ul>
+            </nav>
+</body>
+</html>

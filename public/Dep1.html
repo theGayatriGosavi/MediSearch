@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department1</title>
+    <script src="https://kit.fontawesome.com/8c1b9383db.js" crossorigin="anonymous"></script>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:wght@300;408;500;600;788&display-swap); 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+    background: #ffffff;
+    height: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+.pic
+{
+    margin-top: -15px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 60px;
+    margin-left: -20px;
+}
+.pic img {
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+.img-fluid {
+    max-width: 100%;
+}
+.img-thumbnail {
+    border: 1px solid #dedede;
+    border-radius: 0.125rem;
+    padding: 0.313rem;
+    background-color: #fff;
+    max-width: 100%;
+    height: auto;
+}
+.box1{
+    display: block;
+    width: 350px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    padding: 1.875rem;
+    text-align: center;
+    transition: 350ms ease all;
+    color: blue;
+    background-color: #eff5f9!important;
+    
+}
+
+.doc1
+{
+    color:black ;
+    padding: 20px;
+}
+.doc1 p
+{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+.doc1 a
+{
+    text-decoration: none;
+    color: black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="pic">
+            <img src="doctor_1.jpg" class="img-fluid rounded-circle img-thumbnail" alt="">
+        </div>
+        <div class="doc1">
+            <h2>David Paulson</h2>
+            <br>
+            <p>Head Of Department</p>
+            <br>
+            <p><i class="fa-solid fa-phone" style="color: #427cc5;"></i> 0093-513-244</p>
+            <p><i class="fa-solid fa-envelope" style="color: #427cc5;"></i> roberto@medwise.com</p>
+            <br>
+            <br>
+            <a href="">View profile</a>
+        </div>
+    </div>
+</body>
+</html>

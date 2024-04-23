@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Gabarito&family=Roboto+Slab&family=Roboto:wght@300&family=Satisfy&display=swap');
+
+*{
+  font-family: sans-serif;
+ 
+}
+
+.bg-light {
+  /* --bs-bg-opacity: 1; */
+  background-color: #eff5f9!important;
+}
+
+.signup {
+  width: 40%;
+  margin: 13% auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  height: 120%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.a {
+  font-size: 20px;
+  color: #333;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary {
+  width: 100%;
+  background-color: #2a3947;
+  color: #fff;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .signup {
+    width: 80%;
+  }
+}
+*{
+  color: black;
+}
+
+.navigation{
+  position:fixed;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  font-size: 90%;
+  font-weight: 600;
+  height: 20px;
+  top: 0%;
+
+  
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value to control the transparency */
+  backdrop-filter: blur(10px);
+  
+  
+  z-index: 1000;
+
+}
+
+
+.btn-group{
+ 
+ margin-right: 2%;
+right: 0px;
+
+}
+
+.content{
+  margin-top: 20px;
+}
+
+.form-group{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+
+.logo
+{
+  position: relative;
+  font-size: 40px;
+  margin-left: 8px;
+    margin-right: 480px;
+  color: rgb(0, 0, 0);
+  padding: auto;
+  width: 350px;
+  height: 75px;
+  color: #394657;
+  text-shadow: 0 1px 0 #CACACA;
+  background-color: transparent;
+  border: none;
+  outline: none;
+            
+}
+
+.logo2{
+  width: 60%;
+  }
+
+  .footer
+  {
+    background-color: #2a3947; 
+    height: 110px; 
+    top: 100px; 
+    width: 100%; 
+    position: relative;
+    border-top: 5px solid rgb(255, 255, 255);
+  }
+  .footer ul
+  {
+    color: white;
+    font-size: 10px !important;
+    padding-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    margin-left: 110px;
+  }
+  .footer li
+  {
+    font-size: 10px;
+    display: inline-block;
+    margin: 20px 20px 20px 20px;
+    color: white;
+  }
+  @media (min-width: 1200px)
+{.footer h3 
+    {font-size: 16px;}
+}
